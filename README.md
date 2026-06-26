@@ -137,14 +137,8 @@ This project provided hands-on experience with:
 
 # 🔮 Future Improvements
 
-- Share flashcards with a generated link
 - Print flashcard decks
 - Export flashcards as PDF
-- Search and filter flashcards
-- Dark mode support
-- Drag-and-drop reordering of flashcards
-- Cloud database integration
-- User authentication
 
 ---
 

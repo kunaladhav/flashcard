@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import FlashcardTabs from "../components/FlashcardTabs";
+import ShareModal from "../components/ShareModal";
 
 import { BsArrowLeftShort } from "react-icons/bs";
 import { BsChevronLeft } from "react-icons/bs";
@@ -17,7 +18,9 @@ const FlashcardDetails = () => {
   const selectedDeck = flashcard.find((deck) => deck.id === id);
 
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
+  const [isShareOpen, setIsShareOpen] = useState(false);
   const currentCard = selectedDeck?.cards[currentCardIndex];
+  const shareLink = `${window.location.origin}/flashcards/${id}`;
 
   console.log("Selected Deck: ", selectedDeck);
 
@@ -102,7 +105,10 @@ const FlashcardDetails = () => {
 
         {/* Right Sidebar */}
         <div className="col-span-2 space-y-3">
-          <button className="flex items-center w-full bg-white shadow-sm rounded-lg py-3 px-2 hover:bg-gray-200 cursor-pointer text-left">
+          <button
+            onClick={() => setIsShareOpen(true)}
+            className="flex items-center w-full bg-white shadow-sm rounded-lg py-3 px-2 hover:bg-gray-200 cursor-pointer text-left"
+          >
             <BsShare className="mr-2" />
             Share
           </button>
@@ -116,6 +122,11 @@ const FlashcardDetails = () => {
           </button>
         </div>
       </div>
+      <ShareModal
+        isOpen={isShareOpen}
+        onClose={() => setIsShareOpen(false)}
+        link={shareLink}
+      />
     </div>
   );
 };
