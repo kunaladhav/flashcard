@@ -54,7 +54,6 @@ const CreateFlashCard = () => {
         initialValues={initialValues}
         validationSchema={validationSchema}
         onSubmit={(values) => {
-          // We leave this empty for now as requested
           dispatch(
             addFlashcard({
               id: crypto.randomUUID(),
