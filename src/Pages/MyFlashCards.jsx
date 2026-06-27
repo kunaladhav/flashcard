@@ -39,7 +39,7 @@ const MyFlashCards = () => {
 
             <h3 className="font-semibold text-center">{flashcard.groupName}</h3>
 
-            <p className="text-sm text-gray-500 text-center mt-2">
+            <p className="text-sm text-gray-500 text-center mt-2 line-clamp-2">
               {flashcard.description}
             </p>
             <p className="text-center text-gray-600 mt-3">
