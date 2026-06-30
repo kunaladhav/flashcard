@@ -142,13 +142,22 @@ This project provided hands-on experience with:
 
 ---
 
+# Live Link
+
+- https://flashcard-silk-chi.vercel.app/
+
+---
+
 # 📸 Screenshots
 
 Add screenshots of:
 
 - Create Flashcard Page
+  ![alt text](<./screenshots/Screenshot (189).png>)
 - My Flashcards Page
+  ![alt text](<./screenshots/Screenshot (190).png>)
 - Flashcard Details Page
+  ![alt text](<./screenshots/Screenshot (191).png>)
 
 ---
 

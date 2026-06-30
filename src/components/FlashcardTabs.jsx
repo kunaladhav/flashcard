@@ -28,7 +28,8 @@ const FlashcardTabs = () => {
       >
         My Flashcard
       </NavLink>
-    </div>
+     </div>
+    
   );
 };
 
