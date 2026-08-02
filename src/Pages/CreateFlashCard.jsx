@@ -313,15 +313,3 @@ const CreateFlashCard = () => {
 };
 
 export default CreateFlashCard;
-
-/**
- * So I've done this from my side,
- * created folders :
- *  - src/assests/
- *  - src/components/
- *    - src/components/FlashcardTabs.jsx
- *    - src/components/Header.jsx
- *  - src/Pages/
- *    - src/Pages/CreateFlashCard.jsx
- *    - src/Pages/MyFlashCard.jsx
- */
